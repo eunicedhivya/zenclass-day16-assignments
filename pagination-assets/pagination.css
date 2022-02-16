@@ -1,0 +1,86 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+p {
+  margin: 0 0 10px 0;
+}
+
+#buttons button {
+  outline: none;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 4px 10px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+#buttons button:hover {
+  color: #666;
+  background-color: #ddd;
+  border: 1px solid #ddd;
+}
+
+#buttons button.active {
+  color: #fff;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+}
+
+button:disabled#pgPrevious,
+button[disabled]#pgPrevious,
+button:disabled#pgNext,
+button[disabled]#pgNext {
+  opacity: 0.5;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.table thead tr {
+  background-color: #007bff;
+}
+
+.table thead,
+.table tbody,
+.table tr {
+  width: 100%;
+  height: 40px;
+}
+
+.table td,
+.table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.table td:first-child,
+.table th:first-child {
+  width: 10%;
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+}
+.table td {
+  font-size: 12px;
+}

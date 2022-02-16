@@ -1,0 +1,139 @@
+.container,
+.container2 {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+.container2 {
+  display: flex;
+  column-gap: 20px;
+}
+
+.container2 form {
+  width: 30%;
+}
+.container2 .table-responsive {
+  width: 70%;
+}
+
+.row,
+.row2,
+.row3 {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.row .form-group {
+  width: 50%;
+}
+
+.row3 .form-group:first-child {
+  width: 30%;
+}
+
+.row3 .form-group:last-child {
+  width: 70%;
+}
+.row2 .form-group {
+  width: 33.3%;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+.form-group label {
+  font-size: 12px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.row .table {
+  width: 100%;
+  display: block;
+  border-collapse: collapse;
+  border-spacing: 0;
+  padding: 0;
+}
+
+.table thead tr {
+  background-color: #04aa6d;
+}
+
+.table thead,
+.table tbody,
+.table tr {
+  width: 100%;
+}
+
+.table td,
+.table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  width: 15%;
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: left;
+  color: white;
+  font-size: 14px;
+}
+
+button {
+  background-color: #04aa6d;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#form {
+  background-color: #e8e8e8;
+  padding: 20px;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0 0 10px 0;
+}
+
+@media (max-width: 768px) {
+  .container2 {
+    flex-direction: column;
+  }
+  .container2 form,
+  .container2 .table-responsive {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .row,
+  .row2,
+  .row3 {
+    flex-direction: column;
+  }
+  .row .form-group,
+  .row2 .form-group {
+    width: 100%;
+  }
+  .container2 .table-responsive {
+    overflow-x: auto;
+  }
+  .container2 form {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+}

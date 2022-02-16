@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="form-assets/form.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">DOM manipulation with forms</h1>
+        <p id="description">Create a form with input fields for first name, last name, address, Gender, food, pincode, state, country and use that to append table rows to the content</p>
+    </div>
+    <div class="container2">
+        <form id="form">
+            <div class="row">
+                <div class="form-group">
+                    <input type="text" name="first-name" placeholder="first-name" id="first-name" value="" required />
+                </div>
+                <div class="form-group">
+                    <input type="text" name="last-name" placeholder="last-name" id="last-name" value="" required />
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea name="address" id="address" placeholder="address" value=""></textarea>
+            </div>
+            <div class="form-group">
+                <p>Choose your Gender</p>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            <div class="form-group">
+                <p>Choose your favorite foods</p>
+                <input type="radio" name="food" value="pizza">
+                <label for="pizza">Pizza</label>
+                <input type="radio" name="food" value="burger">
+                <label for="burger">Burger</label>
+                <input type="radio" name="food" value="pasta">
+                <label for="pasta">Pasta</label>
+                <input type="radio" name="food" value="momos">
+                <label for="momos">Momos</label>
+                <input type="radio" name="food" value="chicken">
+                <label for="chicken">Chicken</label>
+            </div>
+            <div class="row2">
+                <div class="form-group">
+                    <input type="text" name="pincode" id="pincode" placeholder="pincode" value="" required />
+                </div>
+                <div class="form-group">
+                    <input type="text" name="state" id="state" placeholder="state" value="" />
+                </div>
+                <div class="form-group">
+                    <input type="text" name="country" id="country" placeholder="country" value="" />
+                </div>
+            </div>
+            <button class="btn btn-primary" id="submit">Submit</button>
+        </form>
+        <div class="table-responsive">
+            <table class="table table-bordered" borderspacing="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>first name</th>
+                        <th>last name</th>
+                        <th>address</th>
+                        <th>gender</th>
+                        <th>food</th>
+                        <th>pincode</th>
+                        <th>state</th>
+                        <th>country</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <tr>
+                        <td>Trisha </td>
+                        <td>Schoen Jr.</td>
+                        <td>1900 Fairfax Rd</td>
+                        <td>female</td>
+                        <td>burger</td>
+                        <td>21401</td>
+                        <td>Maryland</td>
+                        <td>United States</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <script src="form-assets/script.js"></script>
+</body>
+</html>
